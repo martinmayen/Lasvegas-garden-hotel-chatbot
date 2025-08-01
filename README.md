@@ -1,4 +1,4 @@
-# Lasvegas-garden-hotel-chatbot
+
 # 🤖 Lasvegas-garden-hotel-chatbot Chatbot
 
 A lightweight, fully customizable chatbot built with HTML, CSS, and JavaScript — perfect for embedding in personal or organizational websites like hotels, NGOs, and portfolios.
