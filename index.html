@@ -55,26 +55,17 @@
   </footer>
 
   <script src="js/script.js"></script>
-  <script>
-    // Carousel functionality
-    const track = document.getElementById('carouselTrack');
-    let index = 0;
+<script>
+  const track = document.getElementById('carouselTrack');
+  let index = 0;
 
-    function showSlide(i) {
-      const total = track.children.length;
-      index = (i + total) % total;
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
+  function autoSlide() {
+    const total = track.children.length;
+    index = (index + 1) % total;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-    function nextSlide() {
-      showSlide(index + 1);
-    }
-
-    function prevSlide() {
-      showSlide(index - 1);
-    }
-
-    setInterval(nextSlide, 5000); // Auto-slide every 5s
-  </script>
+  setInterval(autoSlide, 8000); // Slower transition: 8s per slide
+</script>
 </body>
 </html>
