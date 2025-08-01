@@ -27,6 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
+  animation: pulseGlow 2s infinite, floatBot 3s ease-in-out infinite;
 }
 
 .chatbot-launcher:hover {
@@ -36,8 +37,6 @@ body {
 .chatbot-launcher img {
   width: 60%;
   height: 60%;
-  /*Optional spin effect */
-  animation: slowSpin 10s linear infinite; 
 }
 
 /* ===== Chatbot Container ===== */
